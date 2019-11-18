@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewData["Title"] = "Login Usuarios";
+}
+<!-- banner -->
+<div class="banner">
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <div class="w3layouts-logo">
+                        <h1><a href="@Url.Action("Index", "Home")">Siembra  <span>Online</span></a></h1>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- //banner -->
+
+<div class="limiter">
+    <div class="container-login100" style="background-image: url('/images/bg-011.jpg');">
+        <div class="wrap-login100 p-t-30 p-b-50">
+            <span class="login100-form-title p-b-41">
+                Login
+            </span>
+
+            <div class="login100-form-title p-b-41">
+                <div class="">
+                    <div class="">
+                        <h1><a href="@Url.Action("LoginAdmin", "Account")" class="linka">Admin</a></h1>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="">
+                        <h1><a href="@Url.Action("LoginUsuario", "Account")" class="linka">Usuarios</a></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
