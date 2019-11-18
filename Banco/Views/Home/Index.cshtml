@@ -58,7 +58,7 @@
             </ul>
         </div>
         <div class="clearfix"> </div>
-        <!--banner Slider starts Here-->
+        <!--banner Slider-->
     </div>
 </div>
 <!-- banner -->
@@ -66,7 +66,7 @@
     <div class="header">
         <div class="container">
             <nav class="navbar navbar-default">
-                <!-- Brand and toggle get grouped for better mobile display -->
+
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
@@ -79,7 +79,7 @@
                     </div>
                 </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
+
                 <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
                     <nav>
                         <ul class="nav navbar-nav">
@@ -88,12 +88,15 @@
                             <li><a href="#markets" class="scroll">Markets</a></li>
                             <li><a href="#services" class="scroll">Servicios</a></li>
                             <li><a href="#mail" class="scroll">Contacto</a></li>
-                            <a href="@Url.Action("Login", "Account")" class="lenk">
-                                <div class="w31-button btn btn-primary-outline var">
-                                    <li>INICIAR SESIÓN
-                            </a></li>
+                         
+                            <div class="w31-button btn btn-primary-outline var">
+                                <a href="@Url.Action("Login", "Account")" class="lenk">
+                                    INICIAR SESIÓN</a>
+                            </div>
+
+                        </ul>
+                    </nav>
                 </div>
-                </ul>
             </nav>
         </div>
         <!-- /.navbar-collapse -->
@@ -488,7 +491,18 @@
     <!-- here stars scrolling icon -->
     <script type="text/javascript">
         $(document).ready(function () {
-         
+
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+            };
+
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
     </script>
 
     <!-- //here ends scrolling icon -->
@@ -519,9 +533,9 @@
     <!-- //FlexSlider -->
 
     <script>
-        // You can also use "$(window).load(function() {"
+        
         $(function () {
-            // Slideshow 4
+           
             $("#slider3").responsiveSlides({
                 auto: true,
                 pager: false,
@@ -538,5 +552,5 @@
 
         });
     </script>
-    <!--banner Slider starts Here-->
+    
 }

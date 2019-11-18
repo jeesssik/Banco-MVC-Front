@@ -59,11 +59,9 @@ body{
 /*-- header --*/
 .lenk{
     text-decoration: none;
-<<<<<<< HEAD
     color: #ffffff !important;
-=======
     color: #ffffff;
->>>>>>> f315c492f84edc4e3d9df9e6fa36d4e96075ee72
+
 }
 .lenk:hover, .var:hover{
     background-color: #ffffff;
@@ -704,7 +702,7 @@ body{
 .w3layouts-contact-form-top h3,.contact-form-top h3,.w3agile-map h3 {
 	color: #000000;
     font-size: 1em;
-    
+    margin: 1em 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -810,7 +808,7 @@ button.btn1:hover{
 	background:#4caf50;
 }
 .w3agile-map {
-    margin: 0 0 0 0;
+    margin: 4em 0 0 0;
 }
 .w3agile-map iframe{
     border: none;
